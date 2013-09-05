@@ -1,0 +1,11 @@
+body{
+  // needs latest Compass, add '@import "compass"' to your scss
+  background-color: rgb(225,255,255); // Old browsers
+  @include filter-gradient(#e1ffff, #b1d8f5, vertical); // IE6-9
+  @include background-image(linear-gradient(top,  rgba(225,255,255,1) 0%,rgba(225,255,255,1) 7%,rgba(225,255,255,1) 12%,rgba(253,255,255,1) 12%,rgba(230,248,253,1) 30%,rgba(200,238,251,1) 54%,rgba(190,228,248,1) 75%,rgba(177,216,245,1) 100%));
+  background-repeat: no-repeat;
+}
+
+.wrapper{
+  background: white;
+}

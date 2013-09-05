@@ -1,0 +1,12 @@
+/* line 1, ../../../../../scss/atriangle/element/footer.scss */
+.footer {
+  background: #1d1d1d;
+}
+/* line 3, ../../../../../scss/atriangle/element/footer.scss */
+.footer h2 {
+  color: white;
+}
+/* line 7, ../../../../../scss/atriangle/element/footer.scss */
+.footer a {
+  color: #959595;
+}

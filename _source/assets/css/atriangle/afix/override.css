@@ -1,0 +1,23 @@
+/* line 1, ../../../../../scss/atriangle/afix/override.scss */
+.contain-to-grid {
+  background: none !important;
+}
+/* line 3, ../../../../../scss/atriangle/afix/override.scss */
+.contain-to-grid section {
+  clear: both !important;
+}
+/* line 6, ../../../../../scss/atriangle/afix/override.scss */
+.contain-to-grid input {
+  line-height: 2em;
+}
+
+/* line 10, ../../../../../scss/atriangle/afix/override.scss */
+.top-bar {
+  min-height: 104px;
+  padding-top: 1em;
+}
+
+/* line 15, ../../../../../scss/atriangle/afix/override.scss */
+.button.secondary {
+  color: white;
+}

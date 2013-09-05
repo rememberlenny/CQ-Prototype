@@ -1,0 +1,18 @@
+.contain-to-grid{
+  background: none !important;
+  section{
+  clear: both!important;
+  }
+  input{
+    line-height: 2em;
+  }
+}
+.top-bar{
+  min-height: 104px;
+  padding-top: 1em;
+}
+.button{
+  &.secondary{
+    color: white;
+  }
+}
