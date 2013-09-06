@@ -1,6 +1,13 @@
 @charset "UTF-8";
-// Foundation Features
+// _Foundation Features
 // =============
+
+* { 
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box; 
+  *behavior: url(assets/js/boxsizing.htc) !important; 
+}
 
 @import "compass";
 
@@ -8,24 +15,30 @@
 
 @import "modular-scale";
 
-@import "foundation/functions/all";
-
-@import "foundation/settings";
-
-@import "foundation/mixins/all";
-
-@import "foundation/common/base";
-
-@import "foundation/components/grid", "foundation/components/modules/all";
-
-// Media Queries Overrides
-@import "foundation/components/modules/mqueries";
+@import "_foundation/app";
+@import "_foundation/globals";
+@import "_foundation/grid";
+@import "_foundation/typography";
+@import "_foundation/mobile";
+@import "_foundation/ui";
+@import "_foundation/forms";
+@import "_foundation/orbit";
+@import "_foundation/reveal";
+@import "_foundation/offcanvas";
 
 @import "atriangle/afix/override";
 
 @import "atriangle/base/background";
 
+@import "atriangle/base/layout";
+
+@import "atriangle/element/nav";
+
 @import "atriangle/element/orbit";
+
+@import "atriangle/element/story-summary";
+
+@import "atriangle/element/story-cta";
 
 @import "atriangle/element/footer";
 

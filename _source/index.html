@@ -1,19 +1,31 @@
 ---
 layout: default
-title: Welcome!
+title: Index
 ---
 <div class="column nine">
     
   {% include orbit.html %}
 
-  <div class="column">
+  <div class="row ">
 
-  <h1>this is the default index page!</h1>
+    {% include story/summary.html %}
+    {% include story/summary.html %}
+    {% include story/summary-nopic.html %}
+    {% include story/summary.html %}
 
-  <p>To get started, see the readme.md file. View the source for this page to see how to split up the grid and position elements, or view <a href="http://foundation.zurb.com/docs/grid.php">the foundation documents</a></p>
+    <a class="right" href="category.html">
+      <strong >
+        View archive
+      </strong>
+    </a>
+    
+    <hr>
 
+    {% include story/share-cta.html %}
+  
   </div>
 
 </div>
+
 
 {% include sidebar.html %}

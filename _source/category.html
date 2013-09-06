@@ -1,6 +1,33 @@
 ---
 layout: default
-title: Page2
+title: Category
 ---
 
-<h1>This is Page2.</h1>
+<div class="column nine">
+
+
+  <div class="column ">
+
+  {% include story/summary.html %}
+  {% include story/summary-nopic.html %}
+  {% include story/summary-nopic.html %}
+  {% include story/summary.html %}
+  {% include story/summary.html %}
+  {% include story/summary.html %}
+  {% include story/summary-nopic.html %}
+  {% include story/summary.html %}
+  
+  <hr style="visibility: hidden">
+
+  {% include category/pagination.html %}
+
+  <hr>
+
+  {% include story/share-cta.html %}
+  
+  </div>
+
+</div>
+
+
+{% include sidebar.html %}

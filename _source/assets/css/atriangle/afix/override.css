@@ -11,13 +11,7 @@
   line-height: 2em;
 }
 
-/* line 10, ../../../../../scss/atriangle/afix/override.scss */
-.top-bar {
-  min-height: 104px;
-  padding-top: 1em;
-}
-
-/* line 15, ../../../../../scss/atriangle/afix/override.scss */
+/* line 12, ../../../../../scss/atriangle/afix/override.scss */
 .button.secondary {
   color: white;
 }

@@ -1,58 +1,91 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
 
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width">
+
+  
   <title>{{ site.title }}{{ page.title }}</title>
 
 
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- Included CSS Files -->
+  <!-- Combine and Compress These CSS Files -->
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/app.css">
+
   <!--[if lt IE 9]>
-    <script src="js/shiv.js"></script>
+    <link rel="stylesheet" href="assets/css/ie.css">
   <![endif]-->
+  
+  <script src="assets/js/modernizr.foundation.js"></script>
+
+  <!-- IE Fix for HTML5 Tags -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
 </head>
 <body>
+    <div class="row  wrap">
+      <div class="">
+
+        <div class="row">
+          <div class="column twelve">
+            
+        {% include nav.html %}
+          
+          </div>
+        </div>
+        <div class="row" id="main">
+        
+        {{ content }} 
+            
+        </div>
+
+        {% include sidebar/sidenav.html %}
+        
+        <div class="row">
+          <div class="column twelve">
+            
+        {% include footer.html %}
+
+          </div>
+        </div>
     
-{% include nav.html %}
-
-<div class="row wrapper">
-
- 
-  {{ content }} 
-
-
-<!-- end container -->	
-</div>
-
-<div class="row">
-
-{% include footer.html %}
-
-</div>
-
-<!-- End Whole-Body Div -->
+      </div>
+    </div>
 
   
-  <!-- Included JS Files (Compressed) -->
-  <script src="assets/js/jquery.js"></script>
-  <script src="assets/js/foundation.min.js"></script>
-  
-  <!-- Initialize JS Plugins -->
+  <!-- Included JS Files -->
+  <script src="assets/js/jquery.min.js"></script>
+
+  <!-- Combine and Compress These JS Files -->
+  <script src="assets/js/jquery.reveal.js"></script>
+  <script src="assets/js/jquery.orbit-1.4.0.js"></script>
+  <script src="assets/js/jquery.customforms.js"></script>
+  <script src="assets/js/jquery.placeholder.min.js"></script>
+  <script src="assets/js/jquery.tooltips.js"></script>
+  <script src="assets/js/jquery.offcanvas.js"></script>
+
+  <!-- End Combine and Compress These JS Files -->
   <script src="assets/js/app.js"></script>
 
-  
-<script>
-$(window).load(function(){
-  $("#featured").orbit({
-    bulletThumbs: true
-  });
-});
-</script> 
-
-  
+  <script type="text/javascript">
+     $(window).load(function() {
+        $('#featured').orbit(
+          {
+            bullets: true,      // true or false to activate the bullet navigation
+            bulletThumbs: true,    // thumbnails for the bullets
+            bulletThumbLocation: 'assets/images/thumb/'
+          }
+        );
+     });
+  </script>
 
 </body>
