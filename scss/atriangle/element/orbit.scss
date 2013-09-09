@@ -1,3 +1,12 @@
+$secondaryColor: #50498F !default;
+
+.orbit-bullets{
+  background: darken($secondaryColor, 10%);
+  .has-thumb{
+    margin-top:1em;
+  }
+}
+
 .orbit-wrapper{
   width: 100% !important;
 }

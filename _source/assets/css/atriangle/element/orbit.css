@@ -1,4 +1,13 @@
-/* line 1, ../../../../../scss/atriangle/element/orbit.scss */
+/* line 3, ../../../../../scss/atriangle/element/orbit.scss */
+.orbit-bullets {
+  background: #3d386d;
+}
+/* line 5, ../../../../../scss/atriangle/element/orbit.scss */
+.orbit-bullets .has-thumb {
+  margin-top: 1em;
+}
+
+/* line 10, ../../../../../scss/atriangle/element/orbit.scss */
 .orbit-wrapper {
   width: 100% !important;
 }

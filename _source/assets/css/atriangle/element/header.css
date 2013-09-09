@@ -1,4 +1,86 @@
 /* line 1, ../../../../../scss/atriangle/element/header.scss */
+.head-top {
+  margin-top: .5em;
+  margin-bottom: .25em;
+}
+/* line 4, ../../../../../scss/atriangle/element/header.scss */
+.head-top input[type="search"] {
+  margin-top: 11px;
+}
+/* line 7, ../../../../../scss/atriangle/element/header.scss */
+.head-top .search-field {
+  float: right;
+  margin-right: 1em;
+}
+/* line 11, ../../../../../scss/atriangle/element/header.scss */
+.head-top .button {
+  padding: 4px 11px 4px;
+}
+
+/* line 16, ../../../../../scss/atriangle/element/header.scss */
+.nav-bar {
+  margin-top: 1em;
+}
+
+/* line 20, ../../../../../scss/atriangle/element/header.scss */
 .header {
   background: white;
+}
+
+/* line 23, ../../../../../scss/atriangle/element/header.scss */
+.header-logo {
+  padding-left: 1em;
+  height: 74px;
+}
+
+/* line 27, ../../../../../scss/atriangle/element/header.scss */
+#HeaderSocial li a {
+  display: block;
+  text-indent: -2000px;
+  background: url("http://jobs.cablevision.com/Styles/Sites/Cablevision/~/media/Sites/Cablevision/images/head-social.png") no-repeat 0 -1px;
+  height: 26px;
+  width: 26px;
+  margin-right: 20px;
+}
+
+/* line 35, ../../../../../scss/atriangle/element/header.scss */
+#HeaderSocial li.twitter a {
+  background-position: -32px -1px;
+}
+
+/* line 38, ../../../../../scss/atriangle/element/header.scss */
+#HeaderSocial li.linked a {
+  background-position: -64px -1px;
+}
+
+/* line 41, ../../../../../scss/atriangle/element/header.scss */
+#HeaderSocial li.youtube a {
+  background-position: -97px -1px;
+}
+
+/* line 44, ../../../../../scss/atriangle/element/header.scss */
+#HeaderSocial li.mail a {
+  background-position: -131px 0px;
+  width: 28px !important;
+}
+
+/* line 48, ../../../../../scss/atriangle/element/header.scss */
+#HeaderSocial li.mail {
+  width: 28px !important;
+}
+
+/* line 51, ../../../../../scss/atriangle/element/header.scss */
+.block-grid.five-up > li {
+  margin-left: 0.5%;
+}
+
+/* line 54, ../../../../../scss/atriangle/element/header.scss */
+.block-grid.five-up {
+  margin-bottom: 4px;
+}
+
+/* line 57, ../../../../../scss/atriangle/element/header.scss */
+#HeaderSocial {
+  padding-left: 1em;
+  margin-top: .5em;
 }

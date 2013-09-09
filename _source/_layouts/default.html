@@ -19,6 +19,8 @@
   <!-- Combine and Compress These CSS Files -->
   <link rel="stylesheet" href="assets/css/style.css">
 
+  <link href='http://fonts.googleapis.com/css?family=Fenix|Oswald:400,700|Roboto:400,500,400italic,500italic' rel='stylesheet' type='text/css'>
+
   <!--[if lt IE 9]>
     <link rel="stylesheet" href="assets/css/ie.css">
   <![endif]-->
@@ -35,18 +37,16 @@
     <div class="row  wrap">
       <div class="">
 
-        <div class="row">
-          <div class="column twelve">
+        <div class="row ">
+          <div class="column twelve ">
             
         {% include nav.html %}
           
           </div>
         </div>
-        <div class="row" id="main">
         
         {{ content }} 
             
-        </div>
 
         {% include sidebar/sidenav.html %}
         
@@ -80,9 +80,16 @@
      $(window).load(function() {
         $('#featured').orbit(
           {
+            captions: true,
+            captionAnimation: 'fade',
             bullets: true,      // true or false to activate the bullet navigation
             bulletThumbs: true,    // thumbnails for the bullets
             bulletThumbLocation: 'assets/images/thumb/'
+          }
+        );
+        $('li.has-thumb').mouseenter(
+          function(){
+            $(this).click();
           }
         );
      });

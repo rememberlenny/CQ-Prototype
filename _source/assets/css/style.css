@@ -2449,8 +2449,9 @@ div.panel {
 .nav-bar {
   height: 45px;
   background: #fff;
-  margin-top: 20px;
-  border: 1px solid #ddd;
+  margin-top: 0px;
+  border: 0px solid #ddd;
+  margin-bottom: 0em;
 }
 
 /* line 265, ../../../scss/_foundation/_ui.scss */
@@ -2460,18 +2461,21 @@ div.panel {
   position: relative;
   padding: 0;
   margin: 0;
-  border-right: 1px solid #ddd;
+  border-right: 0px solid #ddd;
   line-height: 45px;
 }
 
 /* line 266, ../../../scss/_foundation/_ui.scss */
 .nav-bar > li > a.main {
   position: relative;
-  padding: 0 20px;
+  padding: 0 15px;
   display: block;
   text-decoration: none;
   font-size: 15px;
   font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #50498f;
 }
 
 /* line 267, ../../../scss/_foundation/_ui.scss */
@@ -3441,11 +3445,11 @@ div.orbit-wrapper span.pause.active {
   z-index: 30;
   color: #fff;
   text-align: center;
-  padding: 7px 0;
-  font-size: 13px;
+  padding: 13px 0;
+  font-size: 23px;
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 15%;
   width: 100%;
 }
 
@@ -3995,41 +3999,56 @@ body.off-canvas {
 
 /* line 1, ../../../scss/atriangle/base/background.scss */
 body {
-  background-color: #e1ffff;
+  background-color: #81afe0;
   *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFE1FFFF', endColorstr='#FFB1D8F5');
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e1ffff), color-stop(7%, #e1ffff), color-stop(12%, #e1ffff), color-stop(12%, #fdffff), color-stop(30%, #e6f8fd), color-stop(54%, #c8eefb), color-stop(75%, #bee4f8), color-stop(100%, #b1d8f5));
-  background-image: -webkit-linear-gradient(top, #e1ffff 0%, #e1ffff 7%, #e1ffff 12%, #fdffff 12%, #e6f8fd 30%, #c8eefb 54%, #bee4f8 75%, #b1d8f5 100%);
-  background-image: -moz-linear-gradient(top, #e1ffff 0%, #e1ffff 7%, #e1ffff 12%, #fdffff 12%, #e6f8fd 30%, #c8eefb 54%, #bee4f8 75%, #b1d8f5 100%);
-  background-image: -o-linear-gradient(top, #e1ffff 0%, #e1ffff 7%, #e1ffff 12%, #fdffff 12%, #e6f8fd 30%, #c8eefb 54%, #bee4f8 75%, #b1d8f5 100%);
-  background-image: linear-gradient(top, #e1ffff 0%, #e1ffff 7%, #e1ffff 12%, #fdffff 12%, #e6f8fd 30%, #c8eefb 54%, #bee4f8 75%, #b1d8f5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF81AFE0', endColorstr='#FFE3F2FA');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzgxYWZlMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2UzZjJmYSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #81afe0), color-stop(100%, #e3f2fa));
+  background-image: -webkit-linear-gradient(top, #81afe0 0%, #e3f2fa 100%);
+  background-image: -moz-linear-gradient(top, #81afe0 0%, #e3f2fa 100%);
+  background-image: -o-linear-gradient(top, #81afe0 0%, #e3f2fa 100%);
+  background-image: linear-gradient(top, #81afe0 0%, #e3f2fa 100%);
   background-repeat: no-repeat;
 }
 
-/* line 9, ../../../scss/atriangle/base/background.scss */
+/* line 11, ../../../scss/atriangle/base/background.scss */
 .wrapper {
   background: white;
 }
 
-/* line 13, ../../../scss/atriangle/base/background.scss */
+/* line 15, ../../../scss/atriangle/base/background.scss */
 .wrap {
   background: white;
   box-shadow: 0px 10px 30px grey;
 }
 
 /* line 3, ../../../scss/atriangle/base/layout.scss */
-#main, #footer {
+#main, #footer, .sidebarButtonSpan {
   padding-left: 2.2%;
   padding-right: 2.2%;
 }
 
-/* line 3, ../../../scss/atriangle/element/nav.scss */
-.contain-to-grid {
-  border-bottom: 10px solid #50498f;
-  margin-bottom: 1em;
+/* line 8, ../../../scss/atriangle/base/layout.scss */
+#main {
+  margin-top: 1em;
 }
 
-/* line 1, ../../../scss/atriangle/element/orbit.scss */
+/* line 3, ../../../scss/atriangle/element/nav.scss */
+.border-bottom {
+  border-bottom: 10px solid #50498f;
+}
+
+/* line 3, ../../../scss/atriangle/element/orbit.scss */
+.orbit-bullets {
+  background: #3d386d;
+}
+/* line 5, ../../../scss/atriangle/element/orbit.scss */
+.orbit-bullets .has-thumb {
+  margin-top: 1em;
+}
+
+/* line 10, ../../../scss/atriangle/element/orbit.scss */
 .orbit-wrapper {
   width: 100% !important;
 }
@@ -4045,21 +4064,112 @@ body {
   margin-bottom: 0em;
 }
 
+/* line 1, ../../../scss/atriangle/element/post-add.scss */
+.archive-link {
+  margin-bottom: 1em;
+}
+
 /* line 1, ../../../scss/atriangle/element/footer.scss */
-.footer {
+#footer {
   padding-top: 1.5em;
   background: #1d1d1d;
 }
 /* line 4, ../../../scss/atriangle/element/footer.scss */
-.footer h2 {
+#footer h2 {
   color: white;
 }
 /* line 8, ../../../scss/atriangle/element/footer.scss */
-.footer a {
+#footer a {
   color: #959595;
+}
+/* line 11, ../../../scss/atriangle/element/footer.scss */
+#footer hr {
+  border-color: #959595;
 }
 
 /* line 1, ../../../scss/atriangle/element/header.scss */
+.head-top {
+  margin-top: .5em;
+  margin-bottom: .25em;
+}
+/* line 4, ../../../scss/atriangle/element/header.scss */
+.head-top input[type="search"] {
+  margin-top: 11px;
+}
+/* line 7, ../../../scss/atriangle/element/header.scss */
+.head-top .search-field {
+  float: right;
+  margin-right: 1em;
+}
+/* line 11, ../../../scss/atriangle/element/header.scss */
+.head-top .button {
+  padding: 4px 11px 4px;
+}
+
+/* line 16, ../../../scss/atriangle/element/header.scss */
+.nav-bar {
+  margin-top: 1em;
+}
+
+/* line 20, ../../../scss/atriangle/element/header.scss */
 .header {
   background: white;
+}
+
+/* line 23, ../../../scss/atriangle/element/header.scss */
+.header-logo {
+  padding-left: 1em;
+  height: 74px;
+}
+
+/* line 27, ../../../scss/atriangle/element/header.scss */
+#HeaderSocial li a {
+  display: block;
+  text-indent: -2000px;
+  background: url("http://jobs.cablevision.com/Styles/Sites/Cablevision/~/media/Sites/Cablevision/images/head-social.png") no-repeat 0 -1px;
+  height: 26px;
+  width: 26px;
+  margin-right: 20px;
+}
+
+/* line 35, ../../../scss/atriangle/element/header.scss */
+#HeaderSocial li.twitter a {
+  background-position: -32px -1px;
+}
+
+/* line 38, ../../../scss/atriangle/element/header.scss */
+#HeaderSocial li.linked a {
+  background-position: -64px -1px;
+}
+
+/* line 41, ../../../scss/atriangle/element/header.scss */
+#HeaderSocial li.youtube a {
+  background-position: -97px -1px;
+}
+
+/* line 44, ../../../scss/atriangle/element/header.scss */
+#HeaderSocial li.mail a {
+  background-position: -131px 0px;
+  width: 28px !important;
+}
+
+/* line 48, ../../../scss/atriangle/element/header.scss */
+#HeaderSocial li.mail {
+  width: 28px !important;
+}
+
+/* line 51, ../../../scss/atriangle/element/header.scss */
+.block-grid.five-up > li {
+  margin-left: 0.5%;
+}
+
+/* line 54, ../../../scss/atriangle/element/header.scss */
+.block-grid.five-up {
+  margin-bottom: 4px;
+}
+
+/* line 57, ../../../scss/atriangle/element/header.scss */
+#HeaderSocial {
+  padding-left: 1em;
+  margin-top: .5em;
 }

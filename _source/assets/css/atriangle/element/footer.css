@@ -1,13 +1,17 @@
 /* line 1, ../../../../../scss/atriangle/element/footer.scss */
-.footer {
+#footer {
   padding-top: 1.5em;
   background: #1d1d1d;
 }
 /* line 4, ../../../../../scss/atriangle/element/footer.scss */
-.footer h2 {
+#footer h2 {
   color: white;
 }
 /* line 8, ../../../../../scss/atriangle/element/footer.scss */
-.footer a {
+#footer a {
   color: #959595;
+}
+/* line 11, ../../../../../scss/atriangle/element/footer.scss */
+#footer hr {
+  border-color: #959595;
 }

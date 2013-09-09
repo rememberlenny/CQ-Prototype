@@ -1,3 +1,60 @@
+.head-top{
+  margin-top: .5em;
+  margin-bottom: .25em;
+  input[type="search"]{
+    margin-top: 11px;
+  }
+  .search-field{
+    float: right;
+    margin-right: 1em;
+  }
+  .button{
+    padding: 4px 11px 4px;
+  }
+}
+
+.nav-bar{
+  margin-top: 1em;
+}
+
 .header{
   background: white;
+}
+.header-logo{
+  padding-left: 1em;
+  height: 74px;
+}
+#HeaderSocial li a {
+  display:block;
+  text-indent:-2000px;
+  background:url('http://jobs.cablevision.com/Styles/Sites/Cablevision/~/media/Sites/Cablevision/images/head-social.png') no-repeat 0 -1px;
+  height:26px;
+  width:26px;
+  margin-right: 20px;
+}
+#HeaderSocial li.twitter a {
+  background-position:-32px -1px;
+}
+#HeaderSocial li.linked a {
+  background-position:-64px -1px;
+}
+#HeaderSocial li.youtube a {
+  background-position:-97px -1px;
+}
+#HeaderSocial li.mail a {
+  background-position:-131px 0px;
+  width:28px !important;
+}
+#HeaderSocial li.mail {
+  width:28px !important;
+}
+.block-grid.five-up > li {
+  margin-left: 0.5%;
+}
+.block-grid.five-up{
+  margin-bottom: 4px;
+}
+#HeaderSocial {
+  padding-left: 1em;
+  margin-top:.5em;
 }

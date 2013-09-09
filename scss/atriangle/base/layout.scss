@@ -1,6 +1,10 @@
 $margin-size: 2.2%;
 
-#main, #footer{
+#main, #footer, .sidebarButtonSpan{
   padding-left:   $margin-size;
   padding-right:  $margin-size;
+}
+
+#main{
+  margin-top: 1em;
 }
