@@ -3574,31 +3574,29 @@ ul.orbit-bullets li {
 ul.orbit-bullets li.has-thumb {
   background: none;
   width: 33.33333% !important;
-  min-height: 170px;
-  height: 170px;
-  background-size: contain !important;
+  height: 100px;
 }
 
-/* line 227, ../../../scss/_foundation/_orbit.scss */
+/* line 226, ../../../scss/_foundation/_orbit.scss */
 ul.orbit-bullets li.active {
   color: #222;
   background-position: center !important;
   border: none !important;
 }
 
-/* line 233, ../../../scss/_foundation/_orbit.scss */
+/* line 232, ../../../scss/_foundation/_orbit.scss */
 ul.orbit-bullets li.active.has-thumb {
   background-position: center !important;
   opacity: 1;
 }
 
 /* Correct timer in IE */
-/* line 240, ../../../scss/_foundation/_orbit.scss */
+/* line 239, ../../../scss/_foundation/_orbit.scss */
 .timer {
   display: none !important;
 }
 
-/* line 241, ../../../scss/_foundation/_orbit.scss */
+/* line 240, ../../../scss/_foundation/_orbit.scss */
 div.caption {
   background: transparent;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
